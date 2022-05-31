@@ -1,0 +1,184 @@
+.myIcon {
+    font-size: 200%; 
+    color: #066baaff;
+}
+#navbarColor {
+    background-color: white;
+    margin: 0;
+    box-shadow: 0 3px 2px -2px gray;
+    padding-top: 1%;
+}
+#navbarColor a {
+    color: black;
+}
+#navbarColor .active {
+    font-weight: bold;
+}
+#navi {
+    width: max-content;
+}
+#navi li {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 110%;
+}
+#navi li:last-child {
+    background-color: #066baaff;
+}
+
+#carouselHome {
+    margin: 0;
+}
+.carousel-home-button {
+    background-color: transparent;
+    border: none;
+};
+
+.actionBoxHome {
+    border: 2px solid red;
+}
+.subActionBoxHome {
+    margin: 2%;
+    padding: 3% 3%;
+    text-align: center;
+    border-radius: 2%;
+    box-shadow: grey 0px 1px 4px;
+}
+.subAcHomeButton {
+    margin:auto;
+    margin-top: 3%;
+    padding: 2% 3%;
+    display: block;
+    background-color: #066baaff;
+    color: white;
+    border: none;
+}
+
+.subActionBoxHome:hover {
+    box-shadow: #72bcd5ff 0px 1px 4px;
+}
+.subActionBoxHome:hover .subAcHomeButton {
+    background-color: #72bcd5ff;
+}
+.subActionButton:hover a {
+    text-decoration: none;
+}
+.subAcHomeButton:hover {
+    background-color: #72bcd5ff;
+}
+
+#imageBoxHome img {
+    width: 100%;
+    padding: 0px;
+}
+#imageBoxHome {
+    border: 2px solid red;
+    display: flex;
+    flex-wrap: wrap;
+}
+.imgCol {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}  
+.imgCol img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    cursor: pointer;
+    opacity: 0.8;
+}  
+.column img:hover {
+    opacity: 1;
+}
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 960px) {
+    .imgCol {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .navbar-brand span {
+        display: none;
+    }
+    .imgCol {
+      flex: 100%;
+      max-width: 100%;
+    }
+}
+
+
+
+#aboutBoxAbout {
+    border: 2px solid red;
+    padding: 5% 15%;
+}
+#aboutBoxAbout > .row{
+    margin-bottom: 6%;
+}
+
+#pageHeaderBox {
+    margin: 0px;
+    padding: 5%;
+    padding-top: 9%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    border: 2px solid blue;
+    width: 100%;
+};
+@media only screen and (max-width: 600px) {
+    #pageHeaderBox {
+        padding-top: 20%;
+    };    
+};
+
+
+#footerColor {
+    color: #555;
+    background-color: #72bcd5ff;
+    padding: 3%;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+#footerColor a {
+    color: #555;
+}
+#footerColor .footer-title {
+    color: #555;
+    font-weight: bold;
+}
+
+#topBanner {
+    background-image: url('images/annie-spratt-yrzBgqapG1I-unsplash.jpg'); 
+    background-position: fixed; 
+    background-repeat: no-repeat; 
+    background-position: bottom; 
+    background-size: cover; 
+    height: 700px;
+    width: 100%;
+}
+
+.boldText {
+    font-family: 'Courier New', Courier, monospace;
+}
+h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+.headingText {
+    font-size: 180%;
+}
+.statement {
+    font-family: 'Courier New', Courier, monospace;
+    /* font-weight: bold; */
+    font-size: 130%;
+}
+
+
+
+
+    
+    
+    
+
