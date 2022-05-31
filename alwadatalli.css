@@ -90,14 +90,13 @@
 .column img:hover {
     opacity: 1;
 }
-/* Responsive layout - makes a two column-layout instead of four columns */
+
 @media screen and (max-width: 960px) {
     .imgCol {
         flex: 50%;
         max-width: 50%;
     }
 }
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
     .navbar-brand span {
         display: none;
@@ -105,6 +104,25 @@
     .imgCol {
       flex: 100%;
       max-width: 100%;
+    }
+    #pageHeaderBox {
+        background-image: url('images/Mobile\ Version\ \(header\).png');
+        background-position: fixed; 
+        background-repeat: no-repeat; 
+        background-position: bottom; 
+        background-size: cover; 
+        height: 300px;
+        width: 100%;
+    };    
+    #footerColor {
+        background-color: #72bcd5ff;
+        background-image: url('images/Mobile\ Version\ \(footer\).jpg');
+        background-position: fixed; 
+        background-repeat: no-repeat; 
+        background-position: bottom; 
+        background-size: cover; 
+        height: 300px;
+        width: 100%;
     }
 }
 
@@ -118,24 +136,28 @@
 }
 
 #pageHeaderBox {
-    margin: 0px;
-    padding: 5%;
-    padding-top: 9%;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 800;
-    border: 2px solid blue;
+    background-image: url('images/Desktop\ version\ \(header\).png'); 
+    background-position: fixed; 
+    background-repeat: no-repeat; 
+    background-position: bottom; 
+    background-size: cover; 
+    height: 500px;
     width: 100%;
-};
-@media only screen and (max-width: 600px) {
-    #pageHeaderBox {
-        padding-top: 20%;
-    };    
+    padding: 5%;
+    padding-top: 8%;
 };
 
 
 #footerColor {
-    color: #555;
     background-color: #72bcd5ff;
+    background-image: url('images/Desktop\ version\ \(footer\).jpg'); 
+    background-position: fixed; 
+    background-repeat: no-repeat; 
+    background-position: bottom; 
+    background-size: cover; 
+    height: 500px;
+    width: 100%;
+    color: #555;
     padding: 3%;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
