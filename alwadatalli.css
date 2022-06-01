@@ -24,7 +24,22 @@
 #navi li:last-child {
     background-color: #066baaff;
 }
-
+#navi li:last-child a {
+    color: white;
+}
+#navi li:hover {
+    background-color: #066baaff;
+}
+#navi li:hover a {
+    color: white;
+}
+#navi li:last-child:hover {
+    background-color: gray;
+}
+.navbar-brand span {
+    font-family: 'Parisienne', serif;
+    font-size: 120%;
+}
 #carouselHome {
     margin: 0;
 }
@@ -51,6 +66,7 @@
     background-color: #066baaff;
     color: white;
     border: none;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .subActionBoxHome:hover {
@@ -71,7 +87,6 @@
     padding: 0px;
 }
 #imageBoxHome {
-    border: 2px solid red;
     display: flex;
     flex-wrap: wrap;
 }
@@ -91,60 +106,26 @@
     opacity: 1;
 }
 
-@media screen and (max-width: 960px) {
-    .imgCol {
-        flex: 50%;
-        max-width: 50%;
-    }
-}
-@media screen and (max-width: 600px) {
-    .navbar-brand span {
-        display: none;
-    }
-    .imgCol {
-      flex: 100%;
-      max-width: 100%;
-    }
-    #pageHeaderBox {
-        background-image: url('images/Mobile\ Version\ \(header\).png');
-        background-position: fixed; 
-        background-repeat: no-repeat; 
-        background-position: bottom; 
-        background-size: cover; 
-        height: 300px;
-        width: 100%;
-    };    
-    #footerColor {
-        background-color: #72bcd5ff;
-        background-image: url('images/Mobile\ Version\ \(footer\).jpg');
-        background-position: fixed; 
-        background-repeat: no-repeat; 
-        background-position: bottom; 
-        background-size: cover; 
-        height: 300px;
-        width: 100%;
-    }
-}
-
-
-
 #aboutBoxAbout {
-    padding: 5% 15%;
+    padding: 1% 15%;
+    margin-top: 1%;
 }
 #aboutBoxAbout > .row{
     margin-bottom: 6%;
 }
 
 #pageHeaderBox {
-    background-image: url('images/Desktop\ version\ \(header\).png'); 
+    background-image: url('images/20220531_133903.png'); 
     background-position: fixed; 
     background-repeat: no-repeat; 
     background-position: bottom; 
     background-size: cover; 
     height: 500px;
     width: 100%;
-    padding: 5%;
-    padding-top: 8%;
+    padding: 20% 5%;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-weight: bold;
 };
 
 
@@ -178,12 +159,21 @@
     background-size: cover; 
     height: 700px;
     width: 100%;
+    padding: 20% 5%;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
 }
 
 .boldText {
     font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 150%;
 }
-h4 {
+.littleText {
+    font-family: 'Montserrat', sans-serif;
+}
+h4, h5 {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
 }
@@ -196,10 +186,53 @@ h4 {
     font-size: 130%;
 }
 
+#projectBox .row {
+    justify-content: center;
+}
 
+#aboutSummary {
+    text-align: center;
+    font-size: 80%;
+    padding: 5%;
+}
 
-
-    
-    
-    
-
+@media screen and (max-width: 960px) {
+    .imgCol {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .imgCol {
+      flex: 100%;
+      max-width: 100%;
+    }
+    #topBanner {
+        padding-top: 50%;
+        font-size: 250%;
+    }
+    #pageHeaderBox {
+        background-image: url('images/Mobile\ Version\ \(header\).png');
+        background-position: fixed; 
+        background-repeat: no-repeat; 
+        background-position: bottom; 
+        background-size: cover; 
+        height: 300px;
+        width: 100%;
+    };    
+    #footerColor {
+        background-color: #72bcd5ff;
+        background-image: url('images/Mobile\ Version\ \(footer\).jpg');
+        background-position: fixed; 
+        background-repeat: no-repeat; 
+        background-position: bottom; 
+        background-size: cover; 
+        height: 300px;
+        width: 100%;
+    };
+}
+@media screen and (max-width: 820px) {
+    .navbar-brand span {
+        display: none;
+    }
+}
