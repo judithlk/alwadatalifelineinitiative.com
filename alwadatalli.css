@@ -1,64 +1,74 @@
-.myIcon {
+html, body {
+    margin: 0px;
+    height: 100%;
+}
+.blue-icon {
     font-size: 200%; 
     color: #066baaff;
 }
-#navbarColor {
+
+.navigate-extra {
     background-color: white;
     margin: 0;
     box-shadow: 0 3px 2px -2px gray;
     padding-top: 1%;
 }
-#navbarColor a {
+
+.navigate-extra a {
     color: black;
 }
-#navbarColor .active {
+
+.navigate-extra .active {
     font-weight: bold;
 }
-#navi {
+
+.sub-navigate {
     width: max-content;
 }
-#navi li {
+
+.sub-navigate li {
     font-family: 'Montserrat', sans-serif;
     font-size: 110%;
 }
-#navi li:last-child {
+
+.sub-navigate li:last-child {
     background-color: #066baaff;
 }
-#navi li:last-child a {
+
+.sub-navigate li:last-child a {
     color: white;
 }
-#navi li:hover {
+
+.sub-navigate li:hover {
     background-color: #066baaff;
 }
-#navi li:hover a {
+
+.sub-navigate li:hover a {
     color: white;
 }
-#navi li:last-child:hover {
+
+.sub-navigate li:last-child:hover {
     background-color: gray;
 }
+
 .navbar-brand span {
     font-family: 'Parisienne', serif;
     font-size: 120%;
 }
-#carouselHome {
-    margin: 0;
-}
-.carousel-home-button {
-    background-color: transparent;
-    border: none;
-}; 
 
-.actionBoxHome {
-    border: 2px solid red;
+.navbar-brand img {
+    margin-right: 2%;
 }
-.subActionBoxHome {
+
+.sub-actionbox {
     margin: 2%;
     padding: 3% 3%;
     text-align: center;
     border-radius: 2%;
     box-shadow: grey 0px 1px 4px;
 }
-.subAcHomeButton {
+
+.blue-actionbutton {
     margin:auto;
     margin-top: 3%;
     padding: 2% 3%;
@@ -69,89 +79,75 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-.subActionBoxHome:hover {
+.sub-actionbox:hover {
     box-shadow: #72bcd5ff 0px 1px 4px;
 }
-.subActionBoxHome:hover .subAcHomeButton {
-    background-color: #72bcd5ff;
-}
-.subActionButton:hover a {
+
+.button-link:hover {
     text-decoration: none;
 }
-.subAcHomeButton:hover {
-    background-color: #72bcd5ff;
+
+.blue-actionbutton:hover {
+    background-color: #555;
 }
 
-#imageBoxHome img {
+.photo-grid img {
     width: 100%;
     padding: 0px;
 }
-#imageBoxHome {
+
+.photo-grid {
     display: flex;
     flex-wrap: wrap;
 }
-.imgCol {
+
+.photogrid-column {
     flex: 25%;
     max-width: 25%;
     padding: 0 4px;
 }  
-.imgCol img {
-    margin-top: 8px;
-    vertical-align: middle;
+
+.photogrid-column img {
+    display: block;
     width: 100%;
     cursor: pointer;
-    opacity: 0.8;
-}  
-.column img:hover {
     opacity: 1;
+}  
+
+.photogrid-column img:hover {
+    opacity: 0.8;
 }
 
-#aboutBoxAbout {
+.grid-box {
+    margin-bottom: 8px;
+}
+
+.grid-text {
+    position: absolute;
+    top: 10px;
+    z-index: 999;
+    /* background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); 
+    color: #f1f1f1;
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center; */
+}
+
+.home-aboutbox {
     padding: 1% 15%;
     margin-top: 1%;
 }
-#aboutBoxAbout > .row{
+
+.home-aboutbox > .row{
     margin-bottom: 6%;
 }
 
-#pageHeaderBox {
-    background-image: url('images/20220531_133903.png'); 
-    background-position: fixed; 
-    background-repeat: no-repeat; 
-    background-position: bottom; 
-    background-size: cover; 
-    height: 500px;
-    width: 100%;
-    padding: 20% 5%;
-    font-family: 'Montserrat', sans-serif;
-    color: white;
-    font-weight: bold;
-};
-
-
-#footerColor {
-    background-color: #72bcd5ff;
-    background-image: url('images/Desktop\ version\ \(footer\).jpg'); 
-    background-position: fixed; 
-    background-repeat: no-repeat; 
-    background-position: bottom; 
-    background-size: cover; 
-    height: 500px;
-    width: 100%;
-    color: #555;
-    padding: 3%;
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
-}
-#footerColor a {
-    color: #555;
-}
-#footerColor .footer-title {
-    color: #555;
-    font-weight: bold;
-}
-
-#topBanner {
+.homepage-header {
     background-image: url('images/annie-spratt-yrzBgqapG1I-unsplash.jpg'); 
     background-position: fixed; 
     background-repeat: no-repeat; 
@@ -163,76 +159,169 @@
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     color: white;
+    font-size: 800%;
 }
 
-.boldText {
-    font-family: 'Courier New', Courier, monospace;
+.page-headerbox {
+    background-image: url('images/20220531_133903.png'); 
+    background-position: fixed; 
+    background-repeat: no-repeat; 
+    background-position: bottom; 
+    background-size: cover; 
+    /* height: 30%; */
+    width: 100%;
+    padding: 20% 5%;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 800%
+}
+
+.bold-writing {
+    font-family: 'Inconsolata', monospace;
     font-weight: bold;
     font-size: 150%;
 }
-.littleText {
+
+.little-writing {
     font-family: 'Montserrat', sans-serif;
 }
+
 h4, h5 {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
 }
-.headingText {
+
+.emailinfo-link {
+    color: black;
+}
+
+.emailinfo-link:hover {
+    text-decoration: none;
+}
+
+.heading-writing {
     font-size: 180%;
 }
+
 .statement {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Inconsolata', monospace;
     /* font-weight: bold; */
     font-size: 130%;
 }
 
-#projectBox .row {
+.project-infobox .row {
     justify-content: center;
 }
 
-#aboutSummary {
+.aboutus-box {
     text-align: center;
     font-size: 80%;
     padding: 5%;
 }
 
+.project-infotext h4 {
+    margin-left: 15%;
+}
+
+.error-bigbox {
+    margin: 0px;
+    padding: 0px;
+    background-color: #72bcd5ff;
+    width: 100%;
+    height: 100%;
+}
+
+.error-subbox {
+    padding: 12%;
+    margin: auto;
+}
+
+.error-topbox {
+    -webkit-background-clip: text;
+	background-clip: text;
+	background-image: url('images/20220531_133903.png');
+	color: transparent;
+}
+
+.error-topbox h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 700%;
+}
+
+.big-footer {
+    background-color: #72bcd5ff;
+    background-image: url("images/20220531_135651.jpg"); 
+    background-position: fixed; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    background-size: cover; 
+    height: max-content;
+    width: 100%;
+    color: #555;
+    padding: 3%;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-weight: 600;
+}
+
+.big-footer a {
+    color: #555;
+}
+
+.big-footer a:hover {
+    color: white;
+}
+
+.big-footer .footer-title {
+    /* color: #555; */
+    font-weight: 900;
+}
+
+.copyright-line {
+    justify-content: center;
+    color: #066baaff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+}
+
 @media screen and (max-width: 960px) {
-    .imgCol {
+    .photogrid-column {
         flex: 50%;
         max-width: 50%;
     }
+
+    .error-subbox {
+        padding-top: 30%;
+    }
 }
+
+@media screen and (max-width: 768px) {
+    .footer-column {
+        margin-bottom: 5%;
+    }
+}
+
 @media screen and (max-width: 600px) {
-    .imgCol {
+    .photogrid-column {
       flex: 100%;
       max-width: 100%;
     }
-    #topBanner {
+
+    .homepage-header {
         padding-top: 50%;
         font-size: 250%;
     }
-    #pageHeaderBox {
-        background-image: url('images/Mobile\ Version\ \(header\).png');
-        background-position: fixed; 
-        background-repeat: no-repeat; 
-        background-position: bottom; 
-        background-size: cover; 
-        height: 300px;
-        width: 100%;
-    };    
-    #footerColor {
-        background-color: #72bcd5ff;
-        background-image: url('images/Mobile\ Version\ \(footer\).jpg');
-        background-position: fixed; 
-        background-repeat: no-repeat; 
-        background-position: bottom; 
-        background-size: cover; 
-        height: 300px;
-        width: 100%;
-    };
+
+    .page-headerbox {
+        padding-top: 50%;
+        background-position: bottom right;
+    }
 }
+
 @media screen and (max-width: 820px) {
     .navbar-brand span {
         display: none;
     }
 }
+

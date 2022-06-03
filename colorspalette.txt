@@ -61,7 +61,7 @@ $gradient-radial: radial-gradient(#066baaff, #72bcd5ff, #fefefeff, #fc440fff, #0
     padding: 3% 3%;
     text-align: center;
 }
-.subAcHomeButton {
+.blue-actionbutton {
     margin:auto;
     margin-top: 3%;
     padding: 2% 3%;
@@ -71,14 +71,14 @@ $gradient-radial: radial-gradient(#066baaff, #72bcd5ff, #fefefeff, #fc440fff, #0
     border-radius: 15px;
     color: #066baaff;
 }
-.myIcon {
+.blue-icon {
     font-size: 200%; 
     color: #066baaff;
 }
 .subActionBoxHome:hover {
     box-shadow: #fc440fff 0px 1px 4px;
 }
-.subActionBoxHome:hover > .subAcHomeButton {
+.subActionBoxHome:hover > .blue-actionbutton {
     border: 1px solid #fc440fff;
     color: #fc440fff;
 }
@@ -90,12 +90,12 @@ $gradient-radial: radial-gradient(#066baaff, #72bcd5ff, #fefefeff, #fc440fff, #0
 
 
 
-.footerColor {
+.big-footer {
     color: grey;
     background-color: #72bcd5ff;
     padding: 3%;
 }
-.footerColor a {
+.big-footer a {
     color: grey;
 }
 
